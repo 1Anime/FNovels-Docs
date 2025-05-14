@@ -19,7 +19,7 @@ export default function LandingPage() {
         </div>
         <Hero.Title>FNovels</Hero.Title>
         <Hero.Subtitle>
-        Download and enjoy free unlimited official/fan translated novels
+          Download and enjoy free unlimited official/fan translated novels
         </Hero.Subtitle>
         <Hero.Actions>
           <div style={{ display: 'flex', gap: '1em' }}>
