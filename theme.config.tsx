@@ -43,7 +43,7 @@ export default defineTheme({
   ],
   contentFooter: {
     text: 'Made with <3 - @JelLee + 1Anime',
-    editRepositoryBase: 'https://1ani.me/edit/fnovels',
+    editRepositoryBase: 'https://github.com/1Anime/FNovels-Docs',
     socials: [
       social.github('https://github.com/JelLee11'),
       social.discord('/links/discord'),
