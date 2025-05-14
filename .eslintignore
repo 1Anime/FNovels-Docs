@@ -1,0 +1,6 @@
+dist
+node_modules
+.output
+public
+# Ignore index due to prettier removing setext headers
+*.index.md

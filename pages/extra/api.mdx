@@ -1,0 +1,126 @@
+---
+title: 'API Documentation'
+---
+
+# FNovels API Documentation
+
+Welcome to the FNovels API documentation! This API allows you to access novel data (EPUB/PDF) for free, perfect for building your own apps or integrations.
+
+<Frame>
+  <Button to="https://github.com/JelLee11/Jellee-Storage" target="_blank">Deploy Your Own API</Button>
+</Frame>
+
+<Note>
+  You can use our public API or deploy your own instance for more control and reliability.
+</Note>
+
+## Getting Started
+
+FNovels provides a RESTful API for accessing novels, including latest, popular, most rated, publisher, filter, search, recommendations, info, and volumes.
+
+### Base URL
+
+```
+https://jellee.vercel.app/novel/jellee
+```
+
+## Endpoints & Examples
+
+### Get Latest Novels
+```http
+GET /latest?page=1&perPage=1
+```
+Example:
+```
+https://jellee.vercel.app/novel/jellee/latest?page=1&perPage=1
+```
+
+### Get Popular Novels
+```http
+GET /popular?page=1&perPage=1
+```
+
+### Get Most Rated Novels
+```http
+GET /most-rated?page=1&perPage=1
+```
+
+### Get Novels by Publisher
+```http
+GET /publisher?query=yen press&page=1&perPage=1
+```
+
+### Filter Novels
+```http
+GET /filter?type=all&genre=romance&page=1&perPage=1
+```
+- `type`: all, popularity, ratings
+- `genre`: comma-separated genres (e.g. romance,drama)
+
+### Search Novels
+```http
+GET /search?query=angel next door&page=1&perPage=1
+```
+
+### Get Recommendations
+```http
+GET /recommendation?id={id}&page=1&perPage=10
+```
+
+### Get Novel Info
+```http
+GET /info?id={id}
+```
+
+### Get Volumes
+```http
+GET /volumes?id={id}&page=1&perPage=10
+```
+
+## Example Response
+
+```json
+{
+  "success": true,
+  "total": 103,
+  "page": 1,
+  "perPage": 1,
+  "data": [
+    {
+      "id": "",
+      "title": "",
+      "cover": "",
+      "status": "",
+      "type": "",
+      "translation": "",
+      "genres": [],
+      "rating": "0",
+      "popularity": "0",
+      "synopsis": ""
+    }
+  ]
+}
+```
+
+### Volume Response Example
+```json
+{
+  "success": true,
+  "total": 2,
+  "page": 1,
+  "perPage": 10,
+  "data": [
+    {
+      "number": "",
+      "epub": "",
+      "pdf": ""
+    }
+  ]
+}
+```
+
+<Note>
+  Download links are provided as Google Drive IDs. To download directly, use:
+  <br />
+  <code>https://drive.google.com/uc?export=download&id={id}</code>
+</Note>
