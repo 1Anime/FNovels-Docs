@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const redirectTitle = 'Discord';
-const redirectUrl = 'https://discord.gg/jZ6kkzADWS';
+const redirectUrl = 'https://discord.gg/dfmE8re9qQ';
 
 export default function WeblateRedirect() {
   const [countdown, setCountdown] = useState(5);

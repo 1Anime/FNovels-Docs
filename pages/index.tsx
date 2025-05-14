@@ -24,7 +24,7 @@ export default function LandingPage() {
         <Hero.Actions>
           <div style={{ display: 'flex', gap: '1em' }}>
             <Button to="/download">Download Now</Button>
-            <Button to="/api" type="secondary">
+            <Button to="/extra/api" type="secondary">
               API Docs
             </Button>
           </div>
